@@ -14,7 +14,7 @@ namespace SwaggerApi.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public IEnumerable<string> GetList()
         {
             return new string[] { "value1", "value2" };
         }
@@ -24,13 +24,13 @@ namespace SwaggerApi.Controllers
         /// <param name="id">值id</param>
         /// <returns></returns>
         // GET api/values/5
-        public string Get(int id)
+        public string GetValue(int id)
         {
             return "5一通阮";
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public void PostValue([FromBody]string value)
         {
         }
 
