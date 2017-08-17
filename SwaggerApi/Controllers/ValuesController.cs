@@ -18,7 +18,11 @@ namespace SwaggerApi.Controllers
         {
             return new string[] { "value1", "value2" };
         }
-
+        /// <summary>
+        /// 获取值接口
+        /// </summary>
+        /// <param name="id">值id</param>
+        /// <returns></returns>
         // GET api/values/5
         public string Get(int id)
         {
