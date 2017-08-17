@@ -80,7 +80,12 @@ namespace SwaggerApi.Controllers
             Authentication.SignOut(CookieAuthenticationDefaults.AuthenticationType);
             return Ok();
         }
-
+        /// <summary>
+        /// 获取管理员信息
+        /// </summary>
+        /// <param name="returnUrl">回调地址</param>
+        /// <param name="generateState">生成状态</param>
+        /// <returns></returns>
         // GET api/Account/ManageInfo?returnUrl=%2F&generateState=true
         [Route("ManageInfo")]
         public async Task<ManageInfoViewModel> GetManageInfo(string returnUrl, bool generateState = false)
