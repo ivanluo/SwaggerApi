@@ -37,6 +37,7 @@ var SwaggerTranslator = (function () {
         "apply": "应用",
         "Username": "用户名",
         "Password": "密码",
+        "required":"必填项",
         "Terms of service": "服务条款",
         "Created by": "创建者",
         "See more at": "查看更多：",
@@ -85,7 +86,7 @@ var SwaggerTranslator = (function () {
                          controllerName = id.substring(9);
                          strSummary = summaryDict[controllerName];
                          if (strSummary) {
-                             $(item).children(".heading").children("h2").append('：' + strSummary + '');
+                             $(item).children(".heading").children("h2").append('：<span style="color: #89bf04;">' + strSummary + '</span>');
                          }
                      }
                  });
